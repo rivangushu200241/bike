@@ -25,7 +25,7 @@ SECRET_KEY = 'f=&$ishz26(3)!(7lt5roc^s&68!wedu7(1v=wn5z3i8h%@r*y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bike-shop-django.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
