@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    
+    'django.contrib.staticfiles'
     'ckeditor',
     'rest_framework',
     'rest_framework.authtoken'
@@ -137,8 +137,8 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Extra places for collectstatic to find static files.
 if DEBUG:
-    # STATICFILES_DIRS = [
-    # os.path.join(BASE_DIR, 'static'),]
+    STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),]
     pass
 else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
