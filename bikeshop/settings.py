@@ -144,4 +144,8 @@ else:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+DEBUG404 = True 
+#ALLOWED_HOSTS = ['*'] # it works but not secure, so use
+
+DEBUG_PROPAGATE_EXCEPTIONS = True
 django_heroku.settings(locals())
